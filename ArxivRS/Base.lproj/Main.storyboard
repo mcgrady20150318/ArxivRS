@@ -76,14 +76,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="oOd-KH-pXT">
-                                <rect key="frame" x="0.0" y="70" width="307" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input id,author,title,abstract..." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" id="oOd-KH-pXT">
+                                <rect key="frame" x="4" y="70" width="307" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3yu-db-A8H">
-                                <rect key="frame" x="315" y="69" width="53" height="30"/>
+                                <rect key="frame" x="331" y="91" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go"/>
                                 <connections>
@@ -91,10 +91,20 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="157" sectionHeaderHeight="28" sectionFooterHeight="28" id="CtL-fM-mAs">
-                                <rect key="frame" x="0.0" y="107" width="375" height="509"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="472"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="7j9-8V-mwA">
+                                <rect key="frame" x="5" y="108" width="306" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="ID"/>
+                                    <segment title="Author"/>
+                                    <segment title="Title"/>
+                                    <segment title="Abstract"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -102,6 +112,7 @@
                     <connections>
                         <outlet property="Input" destination="oOd-KH-pXT" id="YkB-M8-TVG"/>
                         <outlet property="PaperTableView" destination="CtL-fM-mAs" id="93e-6o-w85"/>
+                        <outlet property="Selector" destination="7j9-8V-mwA" id="aDq-rB-B3p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JR-Lx-i5t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -184,7 +195,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4eE-gn-VRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-720" y="1445.9999999999998"/>
+            <point key="canvasLocation" x="-720.5" y="1494.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H6V-A8-HQL">

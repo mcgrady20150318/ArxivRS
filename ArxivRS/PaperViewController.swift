@@ -16,12 +16,14 @@ class PaperViewController: UIViewController {
     
     var recommender = RecommendedPaperModel(document_id : "")
 
+    @IBOutlet weak var summary: UITextView!
+    @IBOutlet weak var Sview: UIScrollView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var updatedLabel: UILabel!
-    @IBOutlet weak var summaryView: UITextView!
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
+        
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         
     }
@@ -32,6 +34,16 @@ class PaperViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let screenRect:CGRect = UIScreen.mainScreen().bounds
+        
+        self.Sview.contentSize = CGSizeMake(screenRect.width, screenRect.height + 50)
+        
+        self.summary.contentSize = CGSizeMake(screenRect.width, 1200.0)
+        
+        //self.summary
+        
+        //self.summary.contentSize = CGSizeMake(screenRect.width, screenRect.height + 50)
         
         self.title = "PaperDetail"
     
@@ -45,7 +57,7 @@ class PaperViewController: UIViewController {
             
             updatedLabel.text = paper.updated
             
-            summaryView.text = paper.summary
+            summary.text = paper.summary
             
         }else{
             
@@ -55,7 +67,7 @@ class PaperViewController: UIViewController {
             
             updatedLabel.text = recommender.date
             
-            summaryView.text = recommender.text
+            summary.text = recommender.text
             
         }
         

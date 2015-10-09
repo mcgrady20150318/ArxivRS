@@ -14,6 +14,7 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
 
     @IBOutlet weak var Input: UITextField!
     @IBOutlet weak var PaperTableView: UITableView!
+    @IBOutlet weak var Selector: UISegmentedControl!
     
     var searchPaper : [PaperModel] = []
     
@@ -23,6 +24,7 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
        // self.PaperTableView.registerNib(UINib(nibName: "PaperCell", bundle:nil), forCellReuseIdentifier: identifier)
         self.PaperTableView.dataSource = self
         self.PaperTableView.delegate = self
+        self.Selector.selectedSegmentIndex = 1 // default selected in author type
 
         // Do any additional setup after loading the view.
     }
@@ -92,7 +94,39 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
     
     @IBAction func GoBtn(sender: AnyObject) {
         
-        let keywords = Input.text
+        var keywords = Input.text
+        
+        var type:String = ""
+        
+        let searchType: Int = Selector.selectedSegmentIndex
+        
+        switch searchType{
+            
+        case 0:
+            
+            type = "id:"
+            
+        case 1:
+            
+            type = "au:"
+            
+        case 2:
+            
+            type = "ti:"
+            
+        case 3:
+            
+            type = "abs:"
+            
+        default:
+            
+            break
+            
+        }
+        
+        keywords = "\(type)\(keywords!)"
+        
+        print(keywords!)
         
         self.fetchPaperFromRemote(keywords!)
         
@@ -109,6 +143,8 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
         Alamofire.request(.GET, url).responseJSON { response in
             
             var result = JSON(response.2.value!)
+            
+            self.searchPaper.removeAll() //  remove all data before
             
             for(var i=0;i<result.count;i++){
                 
@@ -129,7 +165,6 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
                 //paper.category = result["entries"][i]["category"]
                 
                 self.searchPaper.append(paper)
-                
                 
             }
             
