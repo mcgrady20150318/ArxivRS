@@ -26,6 +26,7 @@
 		6028E6C91BC64B31005326E3 /* SurpriseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6028E6C71BC64B31005326E3 /* SurpriseViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		6028E6CE1BC659E1005326E3 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6CD1BC659E1005326E3 /* TagViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6028E7111BC730FE005326E3 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E7101BC730FE005326E3 /* BookmarkViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB619E1BC785B00087A304 /* PendulumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB619D1BC785B00087A304 /* PendulumView.m */; settings = {ASSET_TAGS = (); }; };
 		B6CEF564A4F6C266DD88050F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AD593FB8AAB4386280C613 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,8 @@
 		6028E6CD1BC659E1005326E3 /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		6028E6CF1BC6FC2F005326E3 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		6028E7101BC730FE005326E3 /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		60AB619C1BC785B00087A304 /* PendulumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendulumView.h; sourceTree = "<group>"; };
+		60AB619D1BC785B00087A304 /* PendulumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendulumView.m; sourceTree = "<group>"; };
 		91AD593FB8AAB4386280C613 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D739CEF36A72BED59D8DE347 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +136,7 @@
 		6028E65F1BC5AE54005326E3 /* ArxivRS */ = {
 			isa = PBXGroup;
 			children = (
+				60AB619A1BC7852B0087A304 /* Library */,
 				6028E6CB1BC657B4005326E3 /* Model */,
 				6028E6CC1BC657C7005326E3 /* View */,
 				6028E6CA1BC6578B005326E3 /* Controller */,
@@ -197,6 +201,23 @@
 				6028E6C71BC64B31005326E3 /* SurpriseViewController.xib */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		60AB619A1BC7852B0087A304 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				60AB619B1BC785890087A304 /* PendulumView */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		60AB619B1BC785890087A304 /* PendulumView */ = {
+			isa = PBXGroup;
+			children = (
+				60AB619C1BC785B00087A304 /* PendulumView.h */,
+				60AB619D1BC785B00087A304 /* PendulumView.m */,
+			);
+			name = PendulumView;
 			sourceTree = "<group>";
 		};
 		9298BE7FA1B049E6C8F550FF /* Frameworks */ = {
@@ -409,6 +430,7 @@
 			files = (
 				6028E7111BC730FE005326E3 /* BookmarkViewController.swift in Sources */,
 				6028E6A51BC6126C005326E3 /* RecommendedPaperModel.swift in Sources */,
+				60AB619E1BC785B00087A304 /* PendulumView.m in Sources */,
 				6028E6A31BC61263005326E3 /* PaperModel.swift in Sources */,
 				6028E6B71BC636BD005326E3 /* RecommenderViewController.swift in Sources */,
 				6028E6BC1BC63D1E005326E3 /* PaperViewController.swift in Sources */,

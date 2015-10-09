@@ -18,6 +18,7 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
     
     var searchPaper : [PaperModel] = []
     
+    var indicator: PendulumView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,15 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
         self.PaperTableView.dataSource = self
         self.PaperTableView.delegate = self
         self.Selector.selectedSegmentIndex = 1 // default selected in author type
-
-        // Do any additional setup after loading the view.
+        
+        //indicator
+        self.indicator = PendulumView.init(frame: self.view.bounds, ballColor:UIColor.blueColor())
+        
+     //   self.view.addSubview(self.indicator!)
+        
+     //   self.indicator?.hidden = true
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -126,12 +134,10 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
         
         keywords = "\(type)\(keywords!)"
         
-        print(keywords!)
-        
         self.fetchPaperFromRemote(keywords!)
         
-        Input.resignFirstResponder()
-        
+       //self.indicator!.stopAnimating()
+
         
     }
     
@@ -139,6 +145,7 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
     func fetchPaperFromRemote(keywords : String){
         
         let url = "http://arxivwrap.org/wrapper?method=json&search_query=\(keywords)&max_results=20"//au:bengio
+    
         
         Alamofire.request(.GET, url).responseJSON { response in
             
@@ -168,14 +175,13 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
                 
             }
             
+            
             self.PaperTableView.reloadData()
-            
-          //  print(self.searchPaper)
-        
-            
             
             
         }
+        
+        
         
         
     }
