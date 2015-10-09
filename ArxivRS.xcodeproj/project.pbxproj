@@ -14,7 +14,6 @@
 		6028E66E1BC5AE54005326E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6028E66C1BC5AE54005326E3 /* LaunchScreen.storyboard */; };
 		6028E6791BC5AE54005326E3 /* ArxivRSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6781BC5AE54005326E3 /* ArxivRSTests.swift */; };
 		6028E6841BC5AE54005326E3 /* ArxivRSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6831BC5AE54005326E3 /* ArxivRSUITests.swift */; };
-		6028E6971BC5B870005326E3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6028E6961BC5B870005326E3 /* Reveal.framework */; settings = {ASSET_TAGS = (); }; };
 		6028E6A11BC61133005326E3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6A01BC61133005326E3 /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6028E6A31BC61263005326E3 /* PaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6A21BC61263005326E3 /* PaperModel.swift */; settings = {ASSET_TAGS = (); }; };
 		6028E6A51BC6126C005326E3 /* RecommendedPaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6A41BC6126C005326E3 /* RecommendedPaperModel.swift */; settings = {ASSET_TAGS = (); }; };
@@ -63,7 +62,6 @@
 		6028E6831BC5AE54005326E3 /* ArxivRSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArxivRSUITests.swift; sourceTree = "<group>"; };
 		6028E6851BC5AE54005326E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6028E6931BC5B81A005326E3 /* ArxivRS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArxivRS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
-		6028E6961BC5B870005326E3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 		6028E6981BC5B8F9005326E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6028E69A1BC5B904005326E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6028E69C1BC5BA12005326E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -90,7 +88,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6CEF564A4F6C266DD88050F /* Pods.framework in Frameworks */,
-				6028E6971BC5B870005326E3 /* Reveal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +111,6 @@
 		6028E6541BC5AE54005326E3 = {
 			isa = PBXGroup;
 			children = (
-				6028E6961BC5B870005326E3 /* Reveal.framework */,
 				6028E65F1BC5AE54005326E3 /* ArxivRS */,
 				6028E6771BC5AE54005326E3 /* ArxivRSTests */,
 				6028E6821BC5AE54005326E3 /* ArxivRSUITests */,
@@ -569,11 +565,7 @@
 				);
 				INFOPLIST_FILE = ArxivRS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-lz",
-					"-framework",
-					Reveal,
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.mcgrady20150318.www.ArxivRS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ArxivRS-Bridging-Header.h";
@@ -593,11 +585,7 @@
 				);
 				INFOPLIST_FILE = ArxivRS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = (
-					"-lz",
-					"-framework",
-					Reveal,
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = io.mcgrady20150318.www.ArxivRS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ArxivRS-Bridging-Header.h";

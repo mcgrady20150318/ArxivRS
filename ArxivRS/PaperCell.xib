@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,44 +13,32 @@
                 <rect key="frame" x="0.0" y="0.0" width="353" height="102"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONc-SP-25V">
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONc-SP-25V">
                         <rect key="frame" x="17" y="51" width="318" height="28"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysv-sT-scw">
+                    <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysv-sT-scw">
                         <rect key="frame" x="17" y="83" width="318" height="21"/>
                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejB-Or-PkY">
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejB-Or-PkY">
                         <rect key="frame" x="17" y="0.0" width="311" height="52"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="ONc-SP-25V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="0j8-jS-EcB"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Ysv-sT-scw" secondAttribute="bottom" constant="-10" id="4Em-pX-8E8"/>
-                    <constraint firstItem="Ysv-sT-scw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="5cS-20-H65"/>
-                    <constraint firstItem="ejB-Or-PkY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="9Od-Ex-hdi"/>
-                    <constraint firstItem="ejB-Or-PkY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="9jv-00-NjX"/>
-                    <constraint firstItem="ejB-Or-PkY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="9" id="HsA-gV-09g"/>
-                    <constraint firstItem="Ysv-sT-scw" firstAttribute="top" secondItem="ONc-SP-25V" secondAttribute="bottom" constant="4" id="RCx-PK-UIA"/>
-                    <constraint firstItem="Ysv-sT-scw" firstAttribute="top" secondItem="ONc-SP-25V" secondAttribute="bottom" constant="4" id="a7o-uo-dij"/>
-                    <constraint firstItem="Ysv-sT-scw" firstAttribute="top" secondItem="ejB-Or-PkY" secondAttribute="bottom" constant="31" id="nmo-yK-m82"/>
-                    <constraint firstItem="ONc-SP-25V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="43" id="rmf-a5-Hnl"/>
-                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="author" destination="ONc-SP-25V" id="72Q-jl-s3C"/>
                 <outlet property="title" destination="ejB-Or-PkY" id="8Jy-0z-0kP"/>
                 <outlet property="updated" destination="Ysv-sT-scw" id="P4G-gV-YPR"/>
             </connections>
-            <point key="canvasLocation" x="345.5" y="319.5"/>
+            <point key="canvasLocation" x="220.5" y="247.5"/>
         </tableViewCell>
     </objects>
 </document>
