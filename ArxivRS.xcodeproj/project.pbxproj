@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6028E6611BC5AE54005326E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6601BC5AE54005326E3 /* AppDelegate.swift */; };
+		6028E6661BC5AE54005326E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6028E6641BC5AE54005326E3 /* Main.storyboard */; };
+		6028E6691BC5AE54005326E3 /* ArxivRS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6671BC5AE54005326E3 /* ArxivRS.xcdatamodeld */; };
+		6028E66B1BC5AE54005326E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6028E66A1BC5AE54005326E3 /* Assets.xcassets */; };
+		6028E66E1BC5AE54005326E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6028E66C1BC5AE54005326E3 /* LaunchScreen.storyboard */; };
+		6028E6791BC5AE54005326E3 /* ArxivRSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6781BC5AE54005326E3 /* ArxivRSTests.swift */; };
+		6028E6841BC5AE54005326E3 /* ArxivRSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6831BC5AE54005326E3 /* ArxivRSUITests.swift */; };
+		6028E6971BC5B870005326E3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6028E6961BC5B870005326E3 /* Reveal.framework */; settings = {ASSET_TAGS = (); }; };
+		6028E6A11BC61133005326E3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6A01BC61133005326E3 /* SearchViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6028E6A31BC61263005326E3 /* PaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6A21BC61263005326E3 /* PaperModel.swift */; settings = {ASSET_TAGS = (); }; };
+		6028E6A51BC6126C005326E3 /* RecommendedPaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6A41BC6126C005326E3 /* RecommendedPaperModel.swift */; settings = {ASSET_TAGS = (); }; };
+		6028E6A81BC61C77005326E3 /* PaperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6A61BC61C77005326E3 /* PaperCell.swift */; settings = {ASSET_TAGS = (); }; };
+		6028E6A91BC61C77005326E3 /* PaperCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6028E6A71BC61C77005326E3 /* PaperCell.xib */; settings = {ASSET_TAGS = (); }; };
+		6028E6B71BC636BD005326E3 /* RecommenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6B61BC636BD005326E3 /* RecommenderViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6028E6BC1BC63D1E005326E3 /* PaperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6BA1BC63D1D005326E3 /* PaperViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6028E6BD1BC63D1E005326E3 /* PaperViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6028E6BB1BC63D1E005326E3 /* PaperViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		6028E6C81BC64B31005326E3 /* SurpriseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6C61BC64B31005326E3 /* SurpriseViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6028E6C91BC64B31005326E3 /* SurpriseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6028E6C71BC64B31005326E3 /* SurpriseViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		6028E6CE1BC659E1005326E3 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6CD1BC659E1005326E3 /* TagViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6028E7111BC730FE005326E3 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E7101BC730FE005326E3 /* BookmarkViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		B6CEF564A4F6C266DD88050F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AD593FB8AAB4386280C613 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6028E6751BC5AE54005326E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6028E6551BC5AE54005326E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6028E65C1BC5AE54005326E3;
+			remoteInfo = ArxivRS;
+		};
+		6028E6801BC5AE54005326E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6028E6551BC5AE54005326E3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6028E65C1BC5AE54005326E3;
+			remoteInfo = ArxivRS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3208B1F68D7CAA1C699E12E1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6028E65D1BC5AE54005326E3 /* ArxivRS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArxivRS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6028E6601BC5AE54005326E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6028E6651BC5AE54005326E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6028E6681BC5AE54005326E3 /* ArxivRS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArxivRS.xcdatamodel; sourceTree = "<group>"; };
+		6028E66A1BC5AE54005326E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6028E66D1BC5AE54005326E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6028E66F1BC5AE54005326E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6028E6741BC5AE54005326E3 /* ArxivRSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArxivRSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6028E6781BC5AE54005326E3 /* ArxivRSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArxivRSTests.swift; sourceTree = "<group>"; };
+		6028E67A1BC5AE54005326E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6028E67F1BC5AE54005326E3 /* ArxivRSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArxivRSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6028E6831BC5AE54005326E3 /* ArxivRSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArxivRSUITests.swift; sourceTree = "<group>"; };
+		6028E6851BC5AE54005326E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6028E6931BC5B81A005326E3 /* ArxivRS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArxivRS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		6028E6961BC5B870005326E3 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		6028E6981BC5B8F9005326E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		6028E69A1BC5B904005326E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6028E69C1BC5BA12005326E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6028E6A01BC61133005326E3 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		6028E6A21BC61263005326E3 /* PaperModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperModel.swift; sourceTree = "<group>"; };
+		6028E6A41BC6126C005326E3 /* RecommendedPaperModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedPaperModel.swift; sourceTree = "<group>"; };
+		6028E6A61BC61C77005326E3 /* PaperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperCell.swift; sourceTree = "<group>"; };
+		6028E6A71BC61C77005326E3 /* PaperCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaperCell.xib; sourceTree = "<group>"; };
+		6028E6B61BC636BD005326E3 /* RecommenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommenderViewController.swift; sourceTree = "<group>"; };
+		6028E6BA1BC63D1D005326E3 /* PaperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperViewController.swift; sourceTree = "<group>"; };
+		6028E6BB1BC63D1E005326E3 /* PaperViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaperViewController.xib; sourceTree = "<group>"; };
+		6028E6C61BC64B31005326E3 /* SurpriseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurpriseViewController.swift; sourceTree = "<group>"; };
+		6028E6C71BC64B31005326E3 /* SurpriseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurpriseViewController.xib; sourceTree = "<group>"; };
+		6028E6CD1BC659E1005326E3 /* TagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		6028E6CF1BC6FC2F005326E3 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		6028E7101BC730FE005326E3 /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
+		91AD593FB8AAB4386280C613 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D739CEF36A72BED59D8DE347 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6028E65A1BC5AE54005326E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CEF564A4F6C266DD88050F /* Pods.framework in Frameworks */,
+				6028E6971BC5B870005326E3 /* Reveal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6028E6711BC5AE54005326E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6028E67C1BC5AE54005326E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6028E6541BC5AE54005326E3 = {
+			isa = PBXGroup;
+			children = (
+				6028E6961BC5B870005326E3 /* Reveal.framework */,
+				6028E65F1BC5AE54005326E3 /* ArxivRS */,
+				6028E6771BC5AE54005326E3 /* ArxivRSTests */,
+				6028E6821BC5AE54005326E3 /* ArxivRSUITests */,
+				6028E65E1BC5AE54005326E3 /* Products */,
+				B7243486C7CD5330C557F892 /* Pods */,
+				9298BE7FA1B049E6C8F550FF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6028E65E1BC5AE54005326E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6028E65D1BC5AE54005326E3 /* ArxivRS.app */,
+				6028E6741BC5AE54005326E3 /* ArxivRSTests.xctest */,
+				6028E67F1BC5AE54005326E3 /* ArxivRSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6028E65F1BC5AE54005326E3 /* ArxivRS */ = {
+			isa = PBXGroup;
+			children = (
+				6028E6CB1BC657B4005326E3 /* Model */,
+				6028E6CC1BC657C7005326E3 /* View */,
+				6028E6CA1BC6578B005326E3 /* Controller */,
+				6028E6601BC5AE54005326E3 /* AppDelegate.swift */,
+				6028E6641BC5AE54005326E3 /* Main.storyboard */,
+				6028E66A1BC5AE54005326E3 /* Assets.xcassets */,
+				6028E66C1BC5AE54005326E3 /* LaunchScreen.storyboard */,
+				6028E66F1BC5AE54005326E3 /* Info.plist */,
+				6028E6671BC5AE54005326E3 /* ArxivRS.xcdatamodeld */,
+				6028E6931BC5B81A005326E3 /* ArxivRS-Bridging-Header.h */,
+				6028E6CF1BC6FC2F005326E3 /* MyPlayground.playground */,
+			);
+			path = ArxivRS;
+			sourceTree = "<group>";
+		};
+		6028E6771BC5AE54005326E3 /* ArxivRSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6028E6781BC5AE54005326E3 /* ArxivRSTests.swift */,
+				6028E67A1BC5AE54005326E3 /* Info.plist */,
+			);
+			path = ArxivRSTests;
+			sourceTree = "<group>";
+		};
+		6028E6821BC5AE54005326E3 /* ArxivRSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6028E6831BC5AE54005326E3 /* ArxivRSUITests.swift */,
+				6028E6851BC5AE54005326E3 /* Info.plist */,
+			);
+			path = ArxivRSUITests;
+			sourceTree = "<group>";
+		};
+		6028E6CA1BC6578B005326E3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6028E7101BC730FE005326E3 /* BookmarkViewController.swift */,
+				6028E6CD1BC659E1005326E3 /* TagViewController.swift */,
+				6028E6A01BC61133005326E3 /* SearchViewController.swift */,
+				6028E6B61BC636BD005326E3 /* RecommenderViewController.swift */,
+				6028E6BA1BC63D1D005326E3 /* PaperViewController.swift */,
+				6028E6C61BC64B31005326E3 /* SurpriseViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6028E6CB1BC657B4005326E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6028E6A21BC61263005326E3 /* PaperModel.swift */,
+				6028E6A41BC6126C005326E3 /* RecommendedPaperModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6028E6CC1BC657C7005326E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6028E6A61BC61C77005326E3 /* PaperCell.swift */,
+				6028E6A71BC61C77005326E3 /* PaperCell.xib */,
+				6028E6BB1BC63D1E005326E3 /* PaperViewController.xib */,
+				6028E6C71BC64B31005326E3 /* SurpriseViewController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9298BE7FA1B049E6C8F550FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6028E69C1BC5BA12005326E3 /* libz.tbd */,
+				6028E69A1BC5B904005326E3 /* QuartzCore.framework */,
+				6028E6981BC5B8F9005326E3 /* CFNetwork.framework */,
+				91AD593FB8AAB4386280C613 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7243486C7CD5330C557F892 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3208B1F68D7CAA1C699E12E1 /* Pods.debug.xcconfig */,
+				D739CEF36A72BED59D8DE347 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6028E65C1BC5AE54005326E3 /* ArxivRS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6028E6881BC5AE54005326E3 /* Build configuration list for PBXNativeTarget "ArxivRS" */;
+			buildPhases = (
+				2E618DF673D46037CFFDADA0 /* Check Pods Manifest.lock */,
+				6028E6591BC5AE54005326E3 /* Sources */,
+				6028E65A1BC5AE54005326E3 /* Frameworks */,
+				6028E65B1BC5AE54005326E3 /* Resources */,
+				F757FC87E6E56F38DCB2AA9B /* Embed Pods Frameworks */,
+				0B6E62FB9EC041BBCDD06D03 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ArxivRS;
+			productName = ArxivRS;
+			productReference = 6028E65D1BC5AE54005326E3 /* ArxivRS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6028E6731BC5AE54005326E3 /* ArxivRSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6028E68B1BC5AE54005326E3 /* Build configuration list for PBXNativeTarget "ArxivRSTests" */;
+			buildPhases = (
+				6028E6701BC5AE54005326E3 /* Sources */,
+				6028E6711BC5AE54005326E3 /* Frameworks */,
+				6028E6721BC5AE54005326E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6028E6761BC5AE54005326E3 /* PBXTargetDependency */,
+			);
+			name = ArxivRSTests;
+			productName = ArxivRSTests;
+			productReference = 6028E6741BC5AE54005326E3 /* ArxivRSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6028E67E1BC5AE54005326E3 /* ArxivRSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6028E68E1BC5AE54005326E3 /* Build configuration list for PBXNativeTarget "ArxivRSUITests" */;
+			buildPhases = (
+				6028E67B1BC5AE54005326E3 /* Sources */,
+				6028E67C1BC5AE54005326E3 /* Frameworks */,
+				6028E67D1BC5AE54005326E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6028E6811BC5AE54005326E3 /* PBXTargetDependency */,
+			);
+			name = ArxivRSUITests;
+			productName = ArxivRSUITests;
+			productReference = 6028E67F1BC5AE54005326E3 /* ArxivRSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6028E6551BC5AE54005326E3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = zhangjun;
+				TargetAttributes = {
+					6028E65C1BC5AE54005326E3 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 45NJ2HZ6U6;
+					};
+					6028E6731BC5AE54005326E3 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 45NJ2HZ6U6;
+						TestTargetID = 6028E65C1BC5AE54005326E3;
+					};
+					6028E67E1BC5AE54005326E3 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 45NJ2HZ6U6;
+						TestTargetID = 6028E65C1BC5AE54005326E3;
+					};
+				};
+			};
+			buildConfigurationList = 6028E6581BC5AE54005326E3 /* Build configuration list for PBXProject "ArxivRS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6028E6541BC5AE54005326E3;
+			productRefGroup = 6028E65E1BC5AE54005326E3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6028E65C1BC5AE54005326E3 /* ArxivRS */,
+				6028E6731BC5AE54005326E3 /* ArxivRSTests */,
+				6028E67E1BC5AE54005326E3 /* ArxivRSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6028E65B1BC5AE54005326E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6028E66E1BC5AE54005326E3 /* LaunchScreen.storyboard in Resources */,
+				6028E66B1BC5AE54005326E3 /* Assets.xcassets in Resources */,
+				6028E6A91BC61C77005326E3 /* PaperCell.xib in Resources */,
+				6028E6BD1BC63D1E005326E3 /* PaperViewController.xib in Resources */,
+				6028E6661BC5AE54005326E3 /* Main.storyboard in Resources */,
+				6028E6C91BC64B31005326E3 /* SurpriseViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6028E6721BC5AE54005326E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6028E67D1BC5AE54005326E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B6E62FB9EC041BBCDD06D03 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E618DF673D46037CFFDADA0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F757FC87E6E56F38DCB2AA9B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6028E6591BC5AE54005326E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6028E7111BC730FE005326E3 /* BookmarkViewController.swift in Sources */,
+				6028E6A51BC6126C005326E3 /* RecommendedPaperModel.swift in Sources */,
+				6028E6A31BC61263005326E3 /* PaperModel.swift in Sources */,
+				6028E6B71BC636BD005326E3 /* RecommenderViewController.swift in Sources */,
+				6028E6BC1BC63D1E005326E3 /* PaperViewController.swift in Sources */,
+				6028E6691BC5AE54005326E3 /* ArxivRS.xcdatamodeld in Sources */,
+				6028E6CE1BC659E1005326E3 /* TagViewController.swift in Sources */,
+				6028E6A11BC61133005326E3 /* SearchViewController.swift in Sources */,
+				6028E6C81BC64B31005326E3 /* SurpriseViewController.swift in Sources */,
+				6028E6611BC5AE54005326E3 /* AppDelegate.swift in Sources */,
+				6028E6A81BC61C77005326E3 /* PaperCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6028E6701BC5AE54005326E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6028E6791BC5AE54005326E3 /* ArxivRSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6028E67B1BC5AE54005326E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6028E6841BC5AE54005326E3 /* ArxivRSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6028E6761BC5AE54005326E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6028E65C1BC5AE54005326E3 /* ArxivRS */;
+			targetProxy = 6028E6751BC5AE54005326E3 /* PBXContainerItemProxy */;
+		};
+		6028E6811BC5AE54005326E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6028E65C1BC5AE54005326E3 /* ArxivRS */;
+			targetProxy = 6028E6801BC5AE54005326E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6028E6641BC5AE54005326E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6028E6651BC5AE54005326E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6028E66C1BC5AE54005326E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6028E66D1BC5AE54005326E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6028E6861BC5AE54005326E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6028E6871BC5AE54005326E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6028E6891BC5AE54005326E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3208B1F68D7CAA1C699E12E1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ArxivRS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.mcgrady20150318.www.ArxivRS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArxivRS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6028E68A1BC5AE54005326E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D739CEF36A72BED59D8DE347 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ArxivRS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-framework",
+					Reveal,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.mcgrady20150318.www.ArxivRS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ArxivRS-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		6028E68C1BC5AE54005326E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArxivRSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.mcgrady20150318.www.ArxivRSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArxivRS.app/ArxivRS";
+			};
+			name = Debug;
+		};
+		6028E68D1BC5AE54005326E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ArxivRSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.mcgrady20150318.www.ArxivRSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArxivRS.app/ArxivRS";
+			};
+			name = Release;
+		};
+		6028E68F1BC5AE54005326E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArxivRSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.mcgrady20150318.www.ArxivRSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArxivRS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6028E6901BC5AE54005326E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ArxivRSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.mcgrady20150318.www.ArxivRSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ArxivRS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6028E6581BC5AE54005326E3 /* Build configuration list for PBXProject "ArxivRS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6028E6861BC5AE54005326E3 /* Debug */,
+				6028E6871BC5AE54005326E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6028E6881BC5AE54005326E3 /* Build configuration list for PBXNativeTarget "ArxivRS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6028E6891BC5AE54005326E3 /* Debug */,
+				6028E68A1BC5AE54005326E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6028E68B1BC5AE54005326E3 /* Build configuration list for PBXNativeTarget "ArxivRSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6028E68C1BC5AE54005326E3 /* Debug */,
+				6028E68D1BC5AE54005326E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6028E68E1BC5AE54005326E3 /* Build configuration list for PBXNativeTarget "ArxivRSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6028E68F1BC5AE54005326E3 /* Debug */,
+				6028E6901BC5AE54005326E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6028E6671BC5AE54005326E3 /* ArxivRS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6028E6681BC5AE54005326E3 /* ArxivRS.xcdatamodel */,
+			);
+			currentVersion = 6028E6681BC5AE54005326E3 /* ArxivRS.xcdatamodel */;
+			path = ArxivRS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6028E6551BC5AE54005326E3 /* Project object */;
+}

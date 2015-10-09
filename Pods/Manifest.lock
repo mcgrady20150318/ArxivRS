@@ -1,0 +1,31 @@
+PODS:
+  - AEXML (2.0.0)
+  - Alamofire (2.0.2)
+  - HanekeSwift (0.10.0)
+  - SwiftyJSON (2.3.0)
+  - UMengSocial (4.2.3)
+
+DEPENDENCIES:
+  - AEXML
+  - Alamofire (~> 2.0)
+  - HanekeSwift
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - UMengSocial
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 3b5d0d4e0c19173b1bf0dc823bde25ad870f70c0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  AEXML: 88014f770428bbcb1eedaa35f1e0b342c1f2b2d0
+  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
+  HanekeSwift: d6f5bdf9dbdbbc09d59623b2c1d533e46463dd4d
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
+  UMengSocial: 85882abe5b20aa38ad558ece71360e16b5d50909
+
+COCOAPODS: 0.38.2
