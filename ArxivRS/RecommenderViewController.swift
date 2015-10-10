@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 import Alamofire
 import SwiftyJSON
 
@@ -16,12 +17,22 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
 
     @IBOutlet weak var RecommenderTableView: UITableView!
     
+    var indicator: PendulumView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.RecommenderTableView.dataSource = self
         self.RecommenderTableView.delegate = self
+        
+        self.indicator = PendulumView.init(frame: self.view.bounds, ballColor:UIColor.blueColor())
+        
+        self.view.addSubview(self.indicator!)
+        
+        self.indicator!.startAnimating()
+        
         fetchPaperFromRemote()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -73,6 +84,34 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
         return PaperCell.getHeightOfRow()
     }
     
+    func getTagsFromCoreData() -> String{
+        
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        
+        let f = NSFetchRequest(entityName: "Tag")
+        
+        do{
+            
+            var str = ""
+            
+            let data = try context.executeFetchRequest(f) as NSArray
+            
+            for(var i=0;i<data.count;i++){
+                
+                str.appendContentsOf(data[i].valueForKey("name") as! String)
+                
+            }
+            
+            return str
+            
+            
+        }catch{}
+        
+        return ""
+        
+        
+    }
+    
     func fetchPaperFromRemote(){
         
         let APIKey = "925238b9ec66cb7e4b2d28e1078c2d51"
@@ -86,9 +125,12 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
             
         ]
         
+        let text = self.getTagsFromCoreData()
+        
         let parameters = [
             
-            "text" : "Machine learning is a subfield of computer science that evolved from the study of pattern recognition"
+            "text" : text
+            //"Machine learning is a subfield of computer science that evolved from the study of pattern recognition"
             ]
         
         Alamofire.request(.POST, url ,parameters:parameters,encoding: .JSON,headers:headers)
@@ -122,6 +164,10 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
                 }
                 
                 self.RecommenderTableView.reloadData()
+                
+                self.indicator!.stopAnimating()
+                
+                self.indicator?.hidesWhenStopped = true
                 
                 
         }

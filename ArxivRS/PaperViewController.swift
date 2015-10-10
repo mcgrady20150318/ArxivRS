@@ -37,9 +37,11 @@ class PaperViewController: UIViewController {
         
         let screenRect:CGRect = UIScreen.mainScreen().bounds
         
-        self.Sview.contentSize = CGSizeMake(screenRect.width, screenRect.height + 50)
+        self.Sview.contentSize = CGSizeMake(screenRect.width, screenRect.height + 200)
         
-        self.summary.contentSize = CGSizeMake(screenRect.width, 1200.0)
+        self.view.backgroundColor = UIColor.flatDarkBlueColor()
+        
+       // self.summary.contentSize = CGSizeMake(screenRect.width, 1200.0)
         
         //self.summary
         

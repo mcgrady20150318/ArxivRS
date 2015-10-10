@@ -20,20 +20,18 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
     
     var indicator: PendulumView?
     
+   // var alertView : DXAlertView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        // self.PaperTableView.registerNib(UINib(nibName: "PaperCell", bundle:nil), forCellReuseIdentifier: identifier)
         self.PaperTableView.dataSource = self
         self.PaperTableView.delegate = self
         self.Selector.selectedSegmentIndex = 1 // default selected in author type
-        
-        //indicator
-        self.indicator = PendulumView.init(frame: self.view.bounds, ballColor:UIColor.blueColor())
-        
-     //   self.view.addSubview(self.indicator!)
-        
-     //   self.indicator?.hidden = true
-        
+        //self.navigationController?.navigationBar.backgroundColor = UIColor.flatDarkPurpleColor()
+        //self.navigationController?.navigationBar.alpha = 0.5
+       // self.alertView = DXAlertView.init(title: "Sorry", contentText: "can't connect the host", leftButtonTitle: "ok", rightButtonTitle: "cancel")
+       // self.alertView?.show()
         
     }
 
@@ -132,20 +130,24 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
             
         }
         
+        self.indicator = PendulumView.init(frame: self.view.bounds, ballColor:UIColor.blueColor())
+        
+        self.view.addSubview(self.indicator!)
+        
+        self.indicator!.startAnimating()
+        
         keywords = "\(type)\(keywords!)"
         
         self.fetchPaperFromRemote(keywords!)
         
-       //self.indicator!.stopAnimating()
-
-        
+        self.Input.resignFirstResponder()
+    
     }
     
 
     func fetchPaperFromRemote(keywords : String){
         
-        let url = "http://arxivwrap.org/wrapper?method=json&search_query=\(keywords)&max_results=20"//au:bengio
-    
+        let url = "http://arxivwrap.org/wrapper?method=json&search_query=\(keywords)&max_results=50"//au:bengio
         
         Alamofire.request(.GET, url).responseJSON { response in
             
@@ -177,6 +179,10 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
             
             
             self.PaperTableView.reloadData()
+            
+            self.indicator!.stopAnimating()
+            
+            self.indicator!.hidesWhenStopped = true
             
             
         }

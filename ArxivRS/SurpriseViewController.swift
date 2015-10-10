@@ -16,6 +16,7 @@ class SurpriseViewController: UIViewController,UITableViewDataSource,UITableView
     
     var id : String?
     var recommenderPaper : [RecommendedPaperModel] = []
+    var indicator : PendulumView?
     
     @IBOutlet weak var SurpriseTableView: UITableView!
     
@@ -38,6 +39,12 @@ class SurpriseViewController: UIViewController,UITableViewDataSource,UITableView
         
         self.SurpriseTableView.dataSource = self
         self.SurpriseTableView.delegate = self
+        
+        self.indicator = PendulumView.init(frame: self.view.bounds, ballColor:UIColor.blueColor())
+        
+        self.view.addSubview(self.indicator!)
+        
+        self.indicator!.startAnimating()
         
         fetchPaperFromRemote()
         
@@ -117,13 +124,6 @@ class SurpriseViewController: UIViewController,UITableViewDataSource,UITableView
             "subscription-key" : APIKey
             
         ]
-
-        
-        //let documen_id = self.id?.componentsSeparatedByString("v")[0]
-        
-        //print(documen_id)
-        
-        //let document_id = "http://arxiv.org/abs/1505.03933"
         
         let document_id = getSurpriseUrl(self.id!)
         
@@ -165,6 +165,10 @@ class SurpriseViewController: UIViewController,UITableViewDataSource,UITableView
                 }
                 
                 self.SurpriseTableView.reloadData()
+                
+                self.indicator!.stopAnimating()
+                
+                self.indicator!.hidesWhenStopped = true
                 
                 
         }

@@ -26,6 +26,7 @@
 		48515C0A0B27F1FE7B58C8A30D4DB3B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4EC4B75BAE91861986227C1BE7B931E /* Foundation.framework */; };
 		4AC6540FE3147C0E3EA55ED5E4D5F00E /* DiskFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2EC18EDBFBFA8370F5D494EEADE968 /* DiskFetcher.swift */; };
 		5915E90A9BBC425995A294AB034E8261 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EA32883EA985334956805399B7DB77 /* MultipartFormData.swift */; };
+		60AB61B31BC825C80087A304 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AB61B21BC825C80087A304 /* QuartzCore.framework */; };
 		64A52E3B7133AF2996A806BDE516D4EC /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD09C4CC8B4E7DED87AF1F2E1919241 /* Pods-dummy.m */; };
 		69B55A1468EC9F8080CF195670AF5DA4 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7402D65FE4F166F805C6B74701D2F /* Validation.swift */; };
 		777FE8C84F2496F47193428066EA8016 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF7749F234D39D95701C7D0E46EA0E8 /* Alamofire-dummy.m */; };
@@ -127,6 +128,7 @@
 		5AB7C11C07005D16728D5AE2846993FD /* AEXML.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = AEXML.modulemap; sourceTree = "<group>"; };
 		5C6316FAF6FF04FF257A62612E238198 /* NSFileManager+Haneke.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSFileManager+Haneke.swift"; path = "Haneke/NSFileManager+Haneke.swift"; sourceTree = "<group>"; };
 		5EEC4A12FFB3439C3EF4384795A1C5CB /* Fetch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fetch.swift; path = Haneke/Fetch.swift; sourceTree = "<group>"; };
+		60AB61B21BC825C80087A304 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		6191EBF799E3AC63BF0ABB2226643E0A /* HanekeSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HanekeSwift-umbrella.h"; sourceTree = "<group>"; };
 		61C380065F632EBA767E4EE1C67DCA0E /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
 		6263502AFA7D3A1AC1A141C63FD434B5 /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Haneke/Data.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AB61B31BC825C80087A304 /* QuartzCore.framework in Frameworks */,
 				7D3BE929DD3C8129FF4B24534148A5A0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,6 +461,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60AB61B21BC825C80087A304 /* QuartzCore.framework */,
 				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
 			);
 			name = Frameworks;

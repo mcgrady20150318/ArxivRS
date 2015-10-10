@@ -27,6 +27,17 @@
 		6028E6CE1BC659E1005326E3 /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6CD1BC659E1005326E3 /* TagViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6028E7111BC730FE005326E3 /* BookmarkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E7101BC730FE005326E3 /* BookmarkViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		60AB619E1BC785B00087A304 /* PendulumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB619D1BC785B00087A304 /* PendulumView.m */; settings = {ASSET_TAGS = (); }; };
+		60AB61A21BC7A7880087A304 /* UIColorMLPFlatColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61A11BC7A7880087A304 /* UIColorMLPFlatColors.m */; settings = {ASSET_TAGS = (); }; };
+		60AB61A61BC7ACB00087A304 /* DXAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61A51BC7ACB00087A304 /* DXAlertView.m */; settings = {ASSET_TAGS = (); }; };
+		60AB61AA1BC8216D0087A304 /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61A91BC8216D0087A304 /* DKCircleButton.m */; settings = {ASSET_TAGS = (); }; };
+		60AB61B41BC8261B0087A304 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6028E69A1BC5B904005326E3 /* QuartzCore.framework */; };
+		60AB61BD1BC828460087A304 /* RGCardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61BC1BC828460087A304 /* RGCardViewLayout.m */; settings = {ASSET_TAGS = (); }; };
+		60AB61F51BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61F11BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB61F61BC88A700087A304 /* PaperManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61F21BC88A700087A304 /* PaperManagedObject.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB62421BC8AD310087A304 /* ZFTokenField.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62411BC8AD310087A304 /* ZFTokenField.m */; settings = {ASSET_TAGS = (); }; };
+		60AB62441BC8B52E0087A304 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62431BC8B52E0087A304 /* TagModel.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB62471BC8C2900087A304 /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62451BC8C2900087A304 /* Tag+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB62481BC8C2900087A304 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62461BC8C2900087A304 /* Tag.swift */; settings = {ASSET_TAGS = (); }; };
 		B6CEF564A4F6C266DD88050F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AD593FB8AAB4386280C613 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -62,7 +73,6 @@
 		6028E67F1BC5AE54005326E3 /* ArxivRSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArxivRSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6028E6831BC5AE54005326E3 /* ArxivRSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArxivRSUITests.swift; sourceTree = "<group>"; };
 		6028E6851BC5AE54005326E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6028E6931BC5B81A005326E3 /* ArxivRS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArxivRS-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		6028E6981BC5B8F9005326E3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		6028E69A1BC5B904005326E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6028E69C1BC5BA12005326E3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -81,6 +91,22 @@
 		6028E7101BC730FE005326E3 /* BookmarkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
 		60AB619C1BC785B00087A304 /* PendulumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendulumView.h; sourceTree = "<group>"; };
 		60AB619D1BC785B00087A304 /* PendulumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendulumView.m; sourceTree = "<group>"; };
+		60AB61A01BC7A7880087A304 /* UIColorMLPFlatColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorMLPFlatColors.h; sourceTree = "<group>"; };
+		60AB61A11BC7A7880087A304 /* UIColorMLPFlatColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorMLPFlatColors.m; sourceTree = "<group>"; };
+		60AB61A41BC7ACB00087A304 /* DXAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXAlertView.h; sourceTree = "<group>"; };
+		60AB61A51BC7ACB00087A304 /* DXAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXAlertView.m; sourceTree = "<group>"; };
+		60AB61A81BC8216D0087A304 /* DKCircleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DKCircleButton.h; sourceTree = "<group>"; };
+		60AB61A91BC8216D0087A304 /* DKCircleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DKCircleButton.m; sourceTree = "<group>"; };
+		60AB61B91BC827C80087A304 /* ArxivRS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArxivRS-Bridging-Header.h"; sourceTree = "<group>"; };
+		60AB61BB1BC828460087A304 /* RGCardViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCardViewLayout.h; sourceTree = "<group>"; };
+		60AB61BC1BC828460087A304 /* RGCardViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCardViewLayout.m; sourceTree = "<group>"; };
+		60AB61F11BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaperManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		60AB61F21BC88A700087A304 /* PaperManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperManagedObject.swift; sourceTree = "<group>"; };
+		60AB62401BC8AD310087A304 /* ZFTokenField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTokenField.h; sourceTree = "<group>"; };
+		60AB62411BC8AD310087A304 /* ZFTokenField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTokenField.m; sourceTree = "<group>"; };
+		60AB62431BC8B52E0087A304 /* TagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
+		60AB62451BC8C2900087A304 /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		60AB62461BC8C2900087A304 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		91AD593FB8AAB4386280C613 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D739CEF36A72BED59D8DE347 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AB61B41BC8261B0087A304 /* QuartzCore.framework in Frameworks */,
 				B6CEF564A4F6C266DD88050F /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +141,7 @@
 		6028E6541BC5AE54005326E3 = {
 			isa = PBXGroup;
 			children = (
+				60AB61B91BC827C80087A304 /* ArxivRS-Bridging-Header.h */,
 				6028E65F1BC5AE54005326E3 /* ArxivRS */,
 				6028E6771BC5AE54005326E3 /* ArxivRSTests */,
 				6028E6821BC5AE54005326E3 /* ArxivRSUITests */,
@@ -145,8 +173,6 @@
 				6028E66A1BC5AE54005326E3 /* Assets.xcassets */,
 				6028E66C1BC5AE54005326E3 /* LaunchScreen.storyboard */,
 				6028E66F1BC5AE54005326E3 /* Info.plist */,
-				6028E6671BC5AE54005326E3 /* ArxivRS.xcdatamodeld */,
-				6028E6931BC5B81A005326E3 /* ArxivRS-Bridging-Header.h */,
 				6028E6CF1BC6FC2F005326E3 /* MyPlayground.playground */,
 			);
 			path = ArxivRS;
@@ -186,8 +212,14 @@
 		6028E6CB1BC657B4005326E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				60AB62451BC8C2900087A304 /* Tag+CoreDataProperties.swift */,
+				60AB62461BC8C2900087A304 /* Tag.swift */,
+				60AB61F11BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift */,
+				60AB61F21BC88A700087A304 /* PaperManagedObject.swift */,
 				6028E6A21BC61263005326E3 /* PaperModel.swift */,
 				6028E6A41BC6126C005326E3 /* RecommendedPaperModel.swift */,
+				60AB62431BC8B52E0087A304 /* TagModel.swift */,
+				6028E6671BC5AE54005326E3 /* ArxivRS.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -206,6 +238,11 @@
 		60AB619A1BC7852B0087A304 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				60AB623F1BC8AD1A0087A304 /* ZFTokenField */,
+				60AB61BA1BC828380087A304 /* RGCardView */,
+				60AB61A71BC8216D0087A304 /* DKCircleButton */,
+				60AB61A31BC7AC830087A304 /* DXAlertView */,
+				60AB619F1BC7A7880087A304 /* UIColorMLPFlatColors */,
 				60AB619B1BC785890087A304 /* PendulumView */,
 			);
 			name = Library;
@@ -218,6 +255,52 @@
 				60AB619D1BC785B00087A304 /* PendulumView.m */,
 			);
 			name = PendulumView;
+			sourceTree = "<group>";
+		};
+		60AB619F1BC7A7880087A304 /* UIColorMLPFlatColors */ = {
+			isa = PBXGroup;
+			children = (
+				60AB61A01BC7A7880087A304 /* UIColorMLPFlatColors.h */,
+				60AB61A11BC7A7880087A304 /* UIColorMLPFlatColors.m */,
+			);
+			name = UIColorMLPFlatColors;
+			path = "UIColor+MLPFlatColors";
+			sourceTree = "<group>";
+		};
+		60AB61A31BC7AC830087A304 /* DXAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				60AB61A41BC7ACB00087A304 /* DXAlertView.h */,
+				60AB61A51BC7ACB00087A304 /* DXAlertView.m */,
+			);
+			name = DXAlertView;
+			sourceTree = "<group>";
+		};
+		60AB61A71BC8216D0087A304 /* DKCircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				60AB61A81BC8216D0087A304 /* DKCircleButton.h */,
+				60AB61A91BC8216D0087A304 /* DKCircleButton.m */,
+			);
+			path = DKCircleButton;
+			sourceTree = "<group>";
+		};
+		60AB61BA1BC828380087A304 /* RGCardView */ = {
+			isa = PBXGroup;
+			children = (
+				60AB61BB1BC828460087A304 /* RGCardViewLayout.h */,
+				60AB61BC1BC828460087A304 /* RGCardViewLayout.m */,
+			);
+			name = RGCardView;
+			sourceTree = "<group>";
+		};
+		60AB623F1BC8AD1A0087A304 /* ZFTokenField */ = {
+			isa = PBXGroup;
+			children = (
+				60AB62401BC8AD310087A304 /* ZFTokenField.h */,
+				60AB62411BC8AD310087A304 /* ZFTokenField.m */,
+			);
+			name = ZFTokenField;
 			sourceTree = "<group>";
 		};
 		9298BE7FA1B049E6C8F550FF /* Frameworks */ = {
@@ -433,12 +516,22 @@
 				60AB619E1BC785B00087A304 /* PendulumView.m in Sources */,
 				6028E6A31BC61263005326E3 /* PaperModel.swift in Sources */,
 				6028E6B71BC636BD005326E3 /* RecommenderViewController.swift in Sources */,
+				60AB61F51BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift in Sources */,
+				60AB62481BC8C2900087A304 /* Tag.swift in Sources */,
+				60AB61A61BC7ACB00087A304 /* DXAlertView.m in Sources */,
 				6028E6BC1BC63D1E005326E3 /* PaperViewController.swift in Sources */,
 				6028E6691BC5AE54005326E3 /* ArxivRS.xcdatamodeld in Sources */,
+				60AB62421BC8AD310087A304 /* ZFTokenField.m in Sources */,
 				6028E6CE1BC659E1005326E3 /* TagViewController.swift in Sources */,
+				60AB62471BC8C2900087A304 /* Tag+CoreDataProperties.swift in Sources */,
+				60AB62441BC8B52E0087A304 /* TagModel.swift in Sources */,
+				60AB61BD1BC828460087A304 /* RGCardViewLayout.m in Sources */,
+				60AB61A21BC7A7880087A304 /* UIColorMLPFlatColors.m in Sources */,
 				6028E6A11BC61133005326E3 /* SearchViewController.swift in Sources */,
 				6028E6C81BC64B31005326E3 /* SurpriseViewController.swift in Sources */,
 				6028E6611BC5AE54005326E3 /* AppDelegate.swift in Sources */,
+				60AB61AA1BC8216D0087A304 /* DKCircleButton.m in Sources */,
+				60AB61F61BC88A700087A304 /* PaperManagedObject.swift in Sources */,
 				6028E6A81BC61C77005326E3 /* PaperCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,6 +627,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ArxivRS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -571,6 +665,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "ArxivRS-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
