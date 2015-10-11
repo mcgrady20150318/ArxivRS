@@ -9,119 +9,143 @@
 import UIKit
 import CoreData
 
-class TagViewController: UIViewController {
-    
-    
-    var taglist : AnyObject?
-    
 
-    @IBOutlet weak var tagShowView: UIScrollView!
-    @IBOutlet weak var tagInputView: UITextField!
-
+class TagViewController: UIViewController,ZFTokenFieldDataSource,ZFTokenFieldDelegate{
+    
+    
+    @IBOutlet weak var scroll: UIScrollView!
+    @IBOutlet weak var tokenField: ZFTokenField!
+    
+    var tokens:[TagModel]? = []
+    
+   // var tokens:[String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     //   deleteAllData()
+        self.tokenField.dataSource = self
+        self.tokenField.delegate = self
+        self.tokenField.textField.placeholder = "Enter here..."
         
-        self.tagShowView.contentSize = CGSizeMake(400,600)
+        self.tokens = self.findAllData()
         
-        // Do any additional setup after loading the view.
+        self.insertData(TagModel(name:"bbb"))
+        
+     //   for token in self.tokens!{
+            
+     //       print(token.name)
+     //   }
+        self.tokenField.reloadData()
+        
+        let screen = UIScreen.mainScreen().bounds
+        self.scroll.contentSize = CGSizeMake(screen.width - 20, self.scroll.frame.height + 100)
+        self.tokenField.textField.becomeFirstResponder()
+        
+    }
+    
+    
+
+    
+    func tokenDeleteButtonPressed(tokenButton:UIButton){
+    
+        if let index:Int = self.tokenField.indexOfTokenView(tokenButton.superview){
+            
+            self.tokens?.removeAtIndex(index)
+            
+            self.deleteOneRowByIndex(index)
+            
+            self.tokenField.reloadData()
+            
+        }
+
+    }
+    
+    /*
+        
+        DataSource
+    
+    */
+
+    func lineHeightForTokenInField(tokenField:ZFTokenField) -> CGFloat{
+        
+        return 40
+        
     }
 
+    func numberOfTokenInField(tokenField:ZFTokenField)->Int{
+        
+        return self.tokens!.count
+    }
+    
+    func tokenField(tokenField: ZFTokenField!, viewForTokenAtIndex index: Int) -> UIView! {
+        
+        let nibContents:NSArray = NSBundle.mainBundle().loadNibNamed("TokenView", owner: nil, options: nil)
+        
+        let view:UIView = nibContents[0] as! UIView
+        
+        let label:UILabel = view.viewWithTag(2) as! UILabel
+        
+        let button:UIButton = view.viewWithTag(3) as! UIButton
+        
+        button.addTarget(self, action: "tokenDeleteButtonPressed:", forControlEvents:UIControlEvents.TouchUpInside)
+        
+        label.text = self.tokens![index].name
+        
+        label.backgroundColor = UIColor.randomFlatColor()
+        
+        let size:CGSize = label.sizeThatFits(CGSizeMake(1000, 40))
+        
+        view.frame = CGRectMake(0, 0, size.width + 97, 40)
+        
+        return view
+        
+    
+    }
+    
+    /*
+    
+        Delegate
+    
+    */
+    
+    func tokenMarginInTokenInField(tokenField: ZFTokenField!) -> CGFloat {
+        
+        return 5
+    }
+    
+    func tokenField(tokenField: ZFTokenField!, didReturnWithText text: String!) {
+        
+        self.tokens!.append(TagModel(name:text))
+        
+        self.insertData(TagModel(name:text))
+        
+        self.tokenField.reloadData()
+        
+    }
+    
+    func tokenField(tokenField: ZFTokenField!, didRemoveTokenAtIndex index: Int) {
+        
+        self.deleteOneRowByIndex(index)
+    
+        self.tokens!.removeAtIndex(index)
+        
+    }
+    
+    func tokenFieldShouldEndEditing(textField: ZFTokenField!) -> Bool {
+        
+        return false
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func addTagBtn(sender: AnyObject) {
-        
-        self.tagInputView.resignFirstResponder()
-        
-        if let inputTag = tagInputView.text{
-            
-            let tag : TagModel = TagModel(name: inputTag)
-            
-            tag.id = 1
-            
-            self.insertData(tag)
-            
-            taglist = self.findData() as! NSArray
-            
-            self.updateUI(taglist! as! NSArray)
-            
-        }
-        
-    }
     
-    func updateUI(tags:NSArray){
-        
-        for(var i=0;i<tags.count;i++){
-            
-            let tagLabel = UILabel(frame: CGRectMake(0,CGFloat(i)*60, 100, 50))
-            
-            tagLabel.backgroundColor = UIColor.randomFlatColor()
-            
-            tagLabel.text = tags[i].valueForKey("name") as? String
-            
-            self.tagShowView.addSubview(tagLabel)
-            
-        }
     
-    }
-    
-    func insertData(t:TagModel){
-        
-        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-        
-        let tag = NSEntityDescription.insertNewObjectForEntityForName("Tag", inManagedObjectContext: context)
-        
-        tag.setValue(t.id, forKey: "id")
-        
-        tag.setValue(t.name, forKey: "name")
-        
-        do{
-            
-            try context.save()
-            
-        }catch{
-            
-            
-        }
-        
-    }
 
-    
-    func findData() -> AnyObject{
-        
-        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-        
-        let f = NSFetchRequest(entityName: "Tag")
-        
-        do{
-            
-            let data = try context.executeFetchRequest(f)
-            
-            return data
-            
-            
-        }catch{}
-        
-        return 0
-    
-        
-    }
-    
-    func deleteAllData(){
-        
-        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-        
-        let f = NSFetchRequest(entityName: "Tag")
-              
-    
-        
-        
 
-    }
 
-    
 }
+

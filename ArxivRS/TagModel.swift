@@ -10,8 +10,6 @@ import UIKit
 
 class TagModel: NSObject {
     
-    var id:Int?
-    
     var name:String?
     
     init(name:String){

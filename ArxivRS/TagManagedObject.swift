@@ -1,5 +1,5 @@
 //
-//  PaperManagedObject.swift
+//  TagManagedObject.swift
 //  ArxivRS
 //
 //  Created by zhangjun on 15/10/10.
@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class PaperManagedObject: NSManagedObject {
+class TagManagedObject: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
 

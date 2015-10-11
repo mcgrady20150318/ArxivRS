@@ -8,6 +8,8 @@
             <connections>
                 <outlet property="Sview" destination="zsY-MZ-fMK" id="PQy-2y-sul"/>
                 <outlet property="authorLabel" destination="rrz-LW-f6e" id="A0a-Sj-7mV"/>
+                <outlet property="bookmarkBtn" destination="d7i-9b-PPj" id="nsB-s7-YM3"/>
+                <outlet property="likeBtn" destination="1YP-pn-w2h" id="KbH-tM-9PU"/>
                 <outlet property="summary" destination="Rkn-Id-viE" id="64C-LL-64e"/>
                 <outlet property="titleLabel" destination="0Av-uI-ils" id="Hyd-Vm-Pfh"/>
                 <outlet property="updatedLabel" destination="yd4-9h-kEo" id="vie-bB-KhH"/>
@@ -25,19 +27,19 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrz-LW-f6e">
                             <rect key="frame" x="8" y="93" width="359" height="53"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd4-9h-kEo">
                             <rect key="frame" x="8" y="154" width="359" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Av-uI-ils">
-                            <rect key="frame" x="8" y="19" width="359" height="77"/>
+                            <rect key="frame" x="8" y="19" width="359" height="59"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rkn-Id-viE">
@@ -46,6 +48,20 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7i-9b-PPj">
+                            <rect key="frame" x="58" y="67" width="40" height="40"/>
+                            <state key="normal" image="OffBookmark"/>
+                            <connections>
+                                <action selector="clickBookmarkBtn:" destination="-1" eventType="touchUpInside" id="2Th-P2-3UV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1YP-pn-w2h">
+                            <rect key="frame" x="3" y="67" width="49" height="40"/>
+                            <state key="normal" image="OffLike"/>
+                            <connections>
+                                <action selector="clickLikeBtn:" destination="-1" eventType="touchUpInside" id="REJ-X9-y5J"/>
+                            </connections>
+                        </button>
                     </subviews>
                 </scrollView>
             </subviews>
@@ -53,4 +69,8 @@
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
+    <resources>
+        <image name="OffBookmark" width="41" height="41"/>
+        <image name="OffLike" width="41" height="41"/>
+    </resources>
 </document>

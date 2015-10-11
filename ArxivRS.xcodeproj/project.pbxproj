@@ -10,7 +10,6 @@
 		6028E6611BC5AE54005326E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6601BC5AE54005326E3 /* AppDelegate.swift */; };
 		6028E6661BC5AE54005326E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6028E6641BC5AE54005326E3 /* Main.storyboard */; };
 		6028E6691BC5AE54005326E3 /* ArxivRS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6671BC5AE54005326E3 /* ArxivRS.xcdatamodeld */; };
-		6028E66B1BC5AE54005326E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6028E66A1BC5AE54005326E3 /* Assets.xcassets */; };
 		6028E66E1BC5AE54005326E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6028E66C1BC5AE54005326E3 /* LaunchScreen.storyboard */; };
 		6028E6791BC5AE54005326E3 /* ArxivRSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6781BC5AE54005326E3 /* ArxivRSTests.swift */; };
 		6028E6841BC5AE54005326E3 /* ArxivRSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6028E6831BC5AE54005326E3 /* ArxivRSUITests.swift */; };
@@ -32,12 +31,15 @@
 		60AB61AA1BC8216D0087A304 /* DKCircleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61A91BC8216D0087A304 /* DKCircleButton.m */; settings = {ASSET_TAGS = (); }; };
 		60AB61B41BC8261B0087A304 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6028E69A1BC5B904005326E3 /* QuartzCore.framework */; };
 		60AB61BD1BC828460087A304 /* RGCardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61BC1BC828460087A304 /* RGCardViewLayout.m */; settings = {ASSET_TAGS = (); }; };
-		60AB61F51BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61F11BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		60AB61F61BC88A700087A304 /* PaperManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB61F21BC88A700087A304 /* PaperManagedObject.swift */; settings = {ASSET_TAGS = (); }; };
 		60AB62421BC8AD310087A304 /* ZFTokenField.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62411BC8AD310087A304 /* ZFTokenField.m */; settings = {ASSET_TAGS = (); }; };
 		60AB62441BC8B52E0087A304 /* TagModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62431BC8B52E0087A304 /* TagModel.swift */; settings = {ASSET_TAGS = (); }; };
-		60AB62471BC8C2900087A304 /* Tag+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62451BC8C2900087A304 /* Tag+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		60AB62481BC8C2900087A304 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62461BC8C2900087A304 /* Tag.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB625B1BC972830087A304 /* TokenView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60AB625A1BC972830087A304 /* TokenView.xib */; settings = {ASSET_TAGS = (); }; };
+		60AB625D1BC98E160087A304 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB625C1BC98E160087A304 /* DataExtension.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB62661BC9BC320087A304 /* TagManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62621BC9BC320087A304 /* TagManagedObject+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB62671BC9BC320087A304 /* TagManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62631BC9BC320087A304 /* TagManagedObject.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB62681BC9BC320087A304 /* PaperManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62641BC9BC320087A304 /* PaperManagedObject+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		60AB62691BC9BC320087A304 /* PaperManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60AB62651BC9BC320087A304 /* PaperManagedObject.swift */; settings = {ASSET_TAGS = (); }; };
+		60EAD2CA1BC9EB3600219993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60EAD2C91BC9EB3600219993 /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
 		B6CEF564A4F6C266DD88050F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AD593FB8AAB4386280C613 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -64,7 +66,6 @@
 		6028E6601BC5AE54005326E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6028E6651BC5AE54005326E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6028E6681BC5AE54005326E3 /* ArxivRS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArxivRS.xcdatamodel; sourceTree = "<group>"; };
-		6028E66A1BC5AE54005326E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6028E66D1BC5AE54005326E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6028E66F1BC5AE54005326E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6028E6741BC5AE54005326E3 /* ArxivRSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArxivRSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,13 +101,16 @@
 		60AB61B91BC827C80087A304 /* ArxivRS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArxivRS-Bridging-Header.h"; sourceTree = "<group>"; };
 		60AB61BB1BC828460087A304 /* RGCardViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGCardViewLayout.h; sourceTree = "<group>"; };
 		60AB61BC1BC828460087A304 /* RGCardViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGCardViewLayout.m; sourceTree = "<group>"; };
-		60AB61F11BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaperManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		60AB61F21BC88A700087A304 /* PaperManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperManagedObject.swift; sourceTree = "<group>"; };
 		60AB62401BC8AD310087A304 /* ZFTokenField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFTokenField.h; sourceTree = "<group>"; };
 		60AB62411BC8AD310087A304 /* ZFTokenField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFTokenField.m; sourceTree = "<group>"; };
 		60AB62431BC8B52E0087A304 /* TagModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagModel.swift; sourceTree = "<group>"; };
-		60AB62451BC8C2900087A304 /* Tag+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tag+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		60AB62461BC8C2900087A304 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		60AB625A1BC972830087A304 /* TokenView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TokenView.xib; sourceTree = "<group>"; };
+		60AB625C1BC98E160087A304 /* DataExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		60AB62621BC9BC320087A304 /* TagManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TagManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		60AB62631BC9BC320087A304 /* TagManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagManagedObject.swift; sourceTree = "<group>"; };
+		60AB62641BC9BC320087A304 /* PaperManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PaperManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		60AB62651BC9BC320087A304 /* PaperManagedObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaperManagedObject.swift; sourceTree = "<group>"; };
+		60EAD2C91BC9EB3600219993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91AD593FB8AAB4386280C613 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D739CEF36A72BED59D8DE347 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,8 +173,8 @@
 				6028E6CC1BC657C7005326E3 /* View */,
 				6028E6CA1BC6578B005326E3 /* Controller */,
 				6028E6601BC5AE54005326E3 /* AppDelegate.swift */,
+				60EAD2C91BC9EB3600219993 /* Assets.xcassets */,
 				6028E6641BC5AE54005326E3 /* Main.storyboard */,
-				6028E66A1BC5AE54005326E3 /* Assets.xcassets */,
 				6028E66C1BC5AE54005326E3 /* LaunchScreen.storyboard */,
 				6028E66F1BC5AE54005326E3 /* Info.plist */,
 				6028E6CF1BC6FC2F005326E3 /* MyPlayground.playground */,
@@ -205,6 +209,7 @@
 				6028E6B61BC636BD005326E3 /* RecommenderViewController.swift */,
 				6028E6BA1BC63D1D005326E3 /* PaperViewController.swift */,
 				6028E6C61BC64B31005326E3 /* SurpriseViewController.swift */,
+				60AB625C1BC98E160087A304 /* DataExtension.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -212,14 +217,14 @@
 		6028E6CB1BC657B4005326E3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				60AB62451BC8C2900087A304 /* Tag+CoreDataProperties.swift */,
-				60AB62461BC8C2900087A304 /* Tag.swift */,
-				60AB61F11BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift */,
-				60AB61F21BC88A700087A304 /* PaperManagedObject.swift */,
 				6028E6A21BC61263005326E3 /* PaperModel.swift */,
 				6028E6A41BC6126C005326E3 /* RecommendedPaperModel.swift */,
 				60AB62431BC8B52E0087A304 /* TagModel.swift */,
 				6028E6671BC5AE54005326E3 /* ArxivRS.xcdatamodeld */,
+				60AB62621BC9BC320087A304 /* TagManagedObject+CoreDataProperties.swift */,
+				60AB62631BC9BC320087A304 /* TagManagedObject.swift */,
+				60AB62641BC9BC320087A304 /* PaperManagedObject+CoreDataProperties.swift */,
+				60AB62651BC9BC320087A304 /* PaperManagedObject.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 				6028E6A71BC61C77005326E3 /* PaperCell.xib */,
 				6028E6BB1BC63D1E005326E3 /* PaperViewController.xib */,
 				6028E6C71BC64B31005326E3 /* SurpriseViewController.xib */,
+				60AB625A1BC972830087A304 /* TokenView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -434,11 +440,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6028E66E1BC5AE54005326E3 /* LaunchScreen.storyboard in Resources */,
-				6028E66B1BC5AE54005326E3 /* Assets.xcassets in Resources */,
 				6028E6A91BC61C77005326E3 /* PaperCell.xib in Resources */,
 				6028E6BD1BC63D1E005326E3 /* PaperViewController.xib in Resources */,
 				6028E6661BC5AE54005326E3 /* Main.storyboard in Resources */,
+				60EAD2CA1BC9EB3600219993 /* Assets.xcassets in Resources */,
 				6028E6C91BC64B31005326E3 /* SurpriseViewController.xib in Resources */,
+				60AB625B1BC972830087A304 /* TokenView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,17 +520,15 @@
 			files = (
 				6028E7111BC730FE005326E3 /* BookmarkViewController.swift in Sources */,
 				6028E6A51BC6126C005326E3 /* RecommendedPaperModel.swift in Sources */,
+				60AB62691BC9BC320087A304 /* PaperManagedObject.swift in Sources */,
 				60AB619E1BC785B00087A304 /* PendulumView.m in Sources */,
 				6028E6A31BC61263005326E3 /* PaperModel.swift in Sources */,
 				6028E6B71BC636BD005326E3 /* RecommenderViewController.swift in Sources */,
-				60AB61F51BC88A700087A304 /* PaperManagedObject+CoreDataProperties.swift in Sources */,
-				60AB62481BC8C2900087A304 /* Tag.swift in Sources */,
 				60AB61A61BC7ACB00087A304 /* DXAlertView.m in Sources */,
 				6028E6BC1BC63D1E005326E3 /* PaperViewController.swift in Sources */,
 				6028E6691BC5AE54005326E3 /* ArxivRS.xcdatamodeld in Sources */,
 				60AB62421BC8AD310087A304 /* ZFTokenField.m in Sources */,
 				6028E6CE1BC659E1005326E3 /* TagViewController.swift in Sources */,
-				60AB62471BC8C2900087A304 /* Tag+CoreDataProperties.swift in Sources */,
 				60AB62441BC8B52E0087A304 /* TagModel.swift in Sources */,
 				60AB61BD1BC828460087A304 /* RGCardViewLayout.m in Sources */,
 				60AB61A21BC7A7880087A304 /* UIColorMLPFlatColors.m in Sources */,
@@ -531,8 +536,11 @@
 				6028E6C81BC64B31005326E3 /* SurpriseViewController.swift in Sources */,
 				6028E6611BC5AE54005326E3 /* AppDelegate.swift in Sources */,
 				60AB61AA1BC8216D0087A304 /* DKCircleButton.m in Sources */,
-				60AB61F61BC88A700087A304 /* PaperManagedObject.swift in Sources */,
+				60AB625D1BC98E160087A304 /* DataExtension.swift in Sources */,
 				6028E6A81BC61C77005326E3 /* PaperCell.swift in Sources */,
+				60AB62671BC9BC320087A304 /* TagManagedObject.swift in Sources */,
+				60AB62661BC9BC320087A304 /* TagManagedObject+CoreDataProperties.swift in Sources */,
+				60AB62681BC9BC320087A304 /* PaperManagedObject+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,6 +21,12 @@ class PaperViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var updatedLabel: UILabel!
+    @IBOutlet weak var likeBtn: UIButton!
+    @IBOutlet weak var bookmarkBtn: UIButton!
+    
+    var isLikeBtnClicked:Bool?
+    
+    var isBookMarkBtnClicked:Bool?
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         
@@ -34,6 +40,10 @@ class PaperViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.isLikeBtnClicked = false
+        
+        self.isBookMarkBtnClicked = false
         
         let screenRect:CGRect = UIScreen.mainScreen().bounds
         
@@ -77,6 +87,90 @@ class PaperViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func clickLikeBtn(sender: AnyObject) {
+        
+        //execute network callback 
+        
+        //insert a record in the table of cloud
+        
+        //to record the user's callback for recommendation and user's behavior
+        
+        //record including the arxivid and clickState
+        
+        if(self.isLikeBtnClicked == false){
+            
+            self.likeBtn.setImage(UIImage(named: "OnLike"), forState: UIControlState.Normal)
+            
+            self.isLikeBtnClicked = true
+            
+            
+        }else{
+            
+            self.likeBtn.setImage(UIImage(named: "OffLike"), forState: UIControlState.Normal)
+            
+            self.isLikeBtnClicked = false
+            
+        }
+        
+        
+    }
+    
+    
+    @IBAction func clickBookmarkBtn(sender: AnyObject) {
+        
+        //network callback and local CoreData callback
+        
+        //badge show in Bookmark viewcontroller
+        
+        if(self.isBookMarkBtnClicked == false){
+            
+            self.bookmarkBtn.setImage(UIImage(named: "OnBookmark"), forState: UIControlState.Normal)
+            
+            self.isBookMarkBtnClicked = true
+            
+            // local CoreData
+            if(flag == 1){
+                
+                self.insertData(paper, flag: flag)
+                
+                
+            }else{
+                
+                self.insertData(recommender, flag: flag)
+            }
+            
+            
+            // add badge in BookmarkViewController
+            
+            
+            
+            
+            
+        }else{
+            
+            self.bookmarkBtn.setImage(UIImage(named: "OffBookmark"), forState: UIControlState.Normal)
+            
+            self.isBookMarkBtnClicked = false
+            
+            if(flag == 1){
+                
+                self.deleteOneRowByField(paper.title!)
+                
+            }else{
+                
+                self.deleteOneRowByField(recommender.title!)
+            }
+            
+            // add badge in BookmarkViewController
+            
+            
+            
+            
+        }
+
+    }
+    
     
     
     func surprise(sender:AnyObject){

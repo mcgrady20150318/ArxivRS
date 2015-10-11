@@ -98,7 +98,9 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
             
             for(var i=0;i<data.count;i++){
                 
-                str.appendContentsOf(data[i].valueForKey("name") as! String)
+                str.appendContentsOf(" ")
+                
+                str.appendContentsOf((data[i].valueForKey("name") as! String))
                 
             }
             
@@ -126,6 +128,8 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
         ]
         
         let text = self.getTagsFromCoreData()
+        
+     //   print(text)
         
         let parameters = [
             

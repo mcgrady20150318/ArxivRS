@@ -140,18 +140,18 @@
     
     [self.tokenViews addObject:self.textField];
     [self addSubview:self.textField];
-    self.textField.frame = (CGRect) {0,0,50,[self.dataSource lineHeightForTokenInField:self]};
+    self.textField.frame = (CGRect) {0,0,100,[self.dataSource lineHeightForTokenInField:self]};
     
     [self invalidateIntrinsicContentSize];
     [self.textField setText:@""];
 }
 
-- (NSUInteger)numberOfToken
+- (NSInteger)numberOfToken
 {
     return self.tokenViews.count - 1;
 }
 
-- (NSUInteger)indexOfTokenView:(UIView *)view
+- (NSInteger)indexOfTokenView:(UIView *)view
 {
     return [self.tokenViews indexOfObject:view];
 }

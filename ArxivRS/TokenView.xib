@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iyb-qZ-zQi">
+            <rect key="frame" x="0.0" y="0.0" width="210" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLL-iA-UR1">
+                    <rect key="frame" x="46" y="0.0" width="128" height="40"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="362-B6-8em">
+                    <rect key="frame" x="182" y="10" width="20" height="20"/>
+                    <color key="backgroundColor" white="0.82696854440000001" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="1oE-qo-p3O"/>
+                        <constraint firstAttribute="width" constant="20" id="lRF-9X-UTG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="3"/>
+                    <state key="normal" title="x">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tag" translatesAutoresizingMaskIntoConstraints="NO" id="Rhv-gd-DVn">
+                    <rect key="frame" x="8" y="5" width="30" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3f6-Og-zpc"/>
+                        <constraint firstAttribute="width" constant="30" id="gJw-FN-q6S"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.95094058390000002" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="362-B6-8em" secondAttribute="bottom" constant="10" id="8xE-So-kjd"/>
+                <constraint firstItem="NLL-iA-UR1" firstAttribute="top" secondItem="iyb-qZ-zQi" secondAttribute="top" id="9tK-q2-SpF"/>
+                <constraint firstItem="NLL-iA-UR1" firstAttribute="leading" secondItem="Rhv-gd-DVn" secondAttribute="trailing" constant="8" id="IBP-V8-a81"/>
+                <constraint firstItem="Rhv-gd-DVn" firstAttribute="top" secondItem="iyb-qZ-zQi" secondAttribute="top" constant="5" id="J7P-cb-cdE"/>
+                <constraint firstItem="362-B6-8em" firstAttribute="top" secondItem="iyb-qZ-zQi" secondAttribute="top" constant="10" id="RWF-KJ-UOH"/>
+                <constraint firstAttribute="bottom" secondItem="NLL-iA-UR1" secondAttribute="bottom" id="aEG-cV-sqg"/>
+                <constraint firstItem="Rhv-gd-DVn" firstAttribute="leading" secondItem="iyb-qZ-zQi" secondAttribute="leading" constant="8" id="bFO-du-riL"/>
+                <constraint firstAttribute="bottom" secondItem="Rhv-gd-DVn" secondAttribute="bottom" constant="5" id="cQ8-A1-xvn"/>
+                <constraint firstItem="362-B6-8em" firstAttribute="leading" secondItem="NLL-iA-UR1" secondAttribute="trailing" constant="8" id="gJy-ou-Dr8"/>
+                <constraint firstAttribute="trailing" secondItem="362-B6-8em" secondAttribute="trailing" constant="8" id="vUb-6g-ESn"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="316" y="-25"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tag" width="16" height="16"/>
+    </resources>
+</document>
