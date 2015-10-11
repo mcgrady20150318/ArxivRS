@@ -3,6 +3,8 @@
     <entity name="Paper" representedClassName=".PaperManagedObject" syncable="YES">
         <attribute name="authors" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="document_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isBookmark" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isLike" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="summary" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="update" optional="YES" attributeType="String" syncable="YES"/>
@@ -11,7 +13,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Paper" positionX="124" positionY="-63" width="128" height="118"/>
+        <element name="Paper" positionX="124" positionY="-63" width="128" height="150"/>
         <element name="Tag" positionX="144" positionY="0" width="128" height="60"/>
     </elements>
 </model>

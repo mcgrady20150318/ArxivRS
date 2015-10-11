@@ -90,7 +90,42 @@ extension TagViewController{
 
 extension PaperViewController{
     
-    func insertData(paper:AnyObject?,flag:Int){
+    func findIsTrue(title:String,content:String) -> Bool{
+        
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        
+        let f = NSFetchRequest(entityName: "Paper")
+        
+        f.predicate = NSPredicate(format: "title = %@ and \(content) = true", title)
+        
+        var data:[AnyObject]?
+        
+        do{
+            
+            data = try context.executeFetchRequest(f)
+            
+            print(data?.count)
+            
+            if data!.count > 0{
+                
+                return true
+                
+            }else{
+                
+                return false
+            }
+
+            
+        }catch{}
+        
+        
+        
+        return false
+        
+        
+    }
+    
+    func insertData(paper:AnyObject?,flag:Int,isLike:Bool,isBookmark:Bool){
         
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
@@ -110,6 +145,10 @@ extension PaperViewController{
             
             p.setValue(p1.updated, forKey: "update")
             
+            p.setValue(isLike, forKey: "isLike")
+            
+            p.setValue(isBookmark, forKey: "isBookmark")
+            
         }else{
             
             let p2 = paper as! RecommendedPaperModel
@@ -123,6 +162,10 @@ extension PaperViewController{
             p.setValue(p2.authors, forKey: "authors")
             
             p.setValue(p2.date, forKey: "update")
+            
+            p.setValue(isLike, forKey: "isLike")
+            
+            p.setValue(isBookmark, forKey: "isBookmark")
             
         }
         

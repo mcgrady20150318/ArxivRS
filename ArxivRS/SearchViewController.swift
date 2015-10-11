@@ -20,7 +20,7 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
     
     var indicator: PendulumView?
     
-   // var alertView : DXAlertView?
+    var alertView : DXAlertView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
         self.Selector.selectedSegmentIndex = 1 // default selected in author type
         //self.navigationController?.navigationBar.backgroundColor = UIColor.flatDarkPurpleColor()
         //self.navigationController?.navigationBar.alpha = 0.5
-       // self.alertView = DXAlertView.init(title: "Sorry", contentText: "can't connect the host", leftButtonTitle: "ok", rightButtonTitle: "cancel")
+        self.alertView = DXAlertView.init(title: "Sorry", contentText: "can't connect the host", leftButtonTitle: "ok", rightButtonTitle: "cancel")
        // self.alertView?.show()
         
     }
@@ -147,9 +147,15 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
 
     func fetchPaperFromRemote(keywords : String){
         
-        let url = "http://arxivwrap.org/wrapper?method=json&search_query=\(keywords)&max_results=50"//au:bengio
+        let space = NSCharacterSet.whitespaceAndNewlineCharacterSet()
         
-        Alamofire.request(.GET, url).responseJSON { response in
+        let keyword = keywords.stringByTrimmingCharactersInSet(space)
+
+        let url = "http://arxivwrap.org/wrapper?method=json&search_query=\(keyword)&max_results=50"//au:bengio
+        
+    do{
+            
+        try Alamofire.request(.GET, url).responseJSON { response in
             
             var result = JSON(response.2.value!)
             
@@ -186,6 +192,13 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
             
             
         }
+        
+    }catch{
+        
+        self.alertView?.show()
+        
+        
+    }
         
         
         

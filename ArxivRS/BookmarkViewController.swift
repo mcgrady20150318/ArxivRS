@@ -12,12 +12,22 @@ class BookmarkViewController: UIViewController,UITableViewDataSource,UITableView
 
     var Paper : [PaperModel] = []
     
+    let refresh = UIRefreshControl()
+    
     @IBOutlet weak var BookmarkTableView: UITableView!
     
     var indicator: PendulumView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*pull to refresh*/
+        
+        refresh.addTarget(self, action: "refreshData", forControlEvents: UIControlEvents.ValueChanged)
+        
+        refresh.attributedTitle = NSAttributedString(string: "Pull To Refresh Paper")
+        
+        self.BookmarkTableView.addSubview(refresh)
         
         self.BookmarkTableView.dataSource = self
         self.BookmarkTableView.delegate = self
@@ -28,7 +38,7 @@ class BookmarkViewController: UIViewController,UITableViewDataSource,UITableView
         
         self.indicator!.startAnimating()
         
-        self.freshData()
+        self.refreshData()
         
         self.indicator?.stopAnimating()
         
@@ -43,11 +53,13 @@ class BookmarkViewController: UIViewController,UITableViewDataSource,UITableView
         // Dispose of any resources that can be recreated.
     }
     
-    func freshData(){
+    func refreshData(){
         
         self.Paper = self.findAllData()
         
         self.BookmarkTableView.reloadData()
+        
+        self.refresh.endRefreshing()
         
     }
     
@@ -94,6 +106,17 @@ class BookmarkViewController: UIViewController,UITableViewDataSource,UITableView
         
         return PaperCell.getHeightOfRow()
     }
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.deleteOneRowByIndex(indexPath.row)
+        
+        self.refreshData()
+
+        
+        
+    }
+
 
 
     

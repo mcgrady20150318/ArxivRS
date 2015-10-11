@@ -14,6 +14,8 @@ import SwiftyJSON
 class RecommenderViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
     
     var recommenderPaper : [RecommendedPaperModel] = []
+    
+    let refresh = UIRefreshControl()
 
     @IBOutlet weak var RecommenderTableView: UITableView!
     
@@ -21,6 +23,10 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        refresh.addTarget(self, action: "fetchPaperFromRemote", forControlEvents: UIControlEvents.ValueChanged)
+        refresh.attributedTitle = NSAttributedString(string: "Pull To Refresh Paper")
+        self.RecommenderTableView.addSubview(refresh)
         
         self.RecommenderTableView.dataSource = self
         self.RecommenderTableView.delegate = self
@@ -127,7 +133,13 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
             
         ]
         
-        let text = self.getTagsFromCoreData()
+        var text = self.getTagsFromCoreData()
+        
+        if text == ""{
+            
+            text = "Machine learning is a subfield of computer science that evolved from the study of pattern recognition"
+            
+        }
         
      //   print(text)
         
@@ -175,6 +187,8 @@ class RecommenderViewController: UIViewController,UITableViewDataSource,UITableV
                 
                 
         }
+        
+        self.refresh.endRefreshing()
         
     }
     

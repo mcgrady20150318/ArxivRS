@@ -41,9 +41,41 @@ class PaperViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.isLikeBtnClicked = false
+        if(flag == 1){
+            
+            self.isLikeBtnClicked = self.findIsTrue(paper.title!, content: "isLike")
+            
+            self.isBookMarkBtnClicked = self.findIsTrue(paper.title!, content: "isBookmark")
+            
+        }else{
+            
+            self.isLikeBtnClicked = self.findIsTrue(recommender.title!, content: "isLike")
+            
+            self.isBookMarkBtnClicked = self.findIsTrue(recommender.title!, content: "isBookmark")
+        }
         
-        self.isBookMarkBtnClicked = false
+        if(self.isLikeBtnClicked == true){
+            
+            self.likeBtn.setImage(UIImage(named: "OnLike"), forState: UIControlState.Normal)
+            
+        }else{
+            
+            self.likeBtn.setImage(UIImage(named: "OffLike"), forState: UIControlState.Normal)
+            
+        }
+        
+        
+        if(self.isBookMarkBtnClicked == true){
+            
+            self.bookmarkBtn.setImage(UIImage(named: "OnBookmark"), forState: UIControlState.Normal)
+            
+        }else{
+            
+            self.bookmarkBtn.setImage(UIImage(named: "OffBookmark"), forState: UIControlState.Normal)
+            
+        }
+        
+        
         
         let screenRect:CGRect = UIScreen.mainScreen().bounds
         
@@ -132,12 +164,12 @@ class PaperViewController: UIViewController {
             // local CoreData
             if(flag == 1){
                 
-                self.insertData(paper, flag: flag)
+                self.insertData(paper, flag: flag,isLike: isLikeBtnClicked!,isBookmark: isBookMarkBtnClicked!)
                 
                 
             }else{
                 
-                self.insertData(recommender, flag: flag)
+                self.insertData(recommender, flag: flag,isLike: isLikeBtnClicked!,isBookmark: isBookMarkBtnClicked!)
             }
             
             

@@ -113,6 +113,15 @@ class TagViewController: UIViewController,ZFTokenFieldDataSource,ZFTokenFieldDel
         return 5
     }
     
+    func tokenFieldDidEndEditing(tokenField: ZFTokenField!) {
+        
+        self.tokenField.becomeFirstResponder()
+        
+        self.tokenField.resignFirstResponder()
+        
+    }
+    
+    
     func tokenField(tokenField: ZFTokenField!, didReturnWithText text: String!) {
         
         self.tokens!.append(TagModel(name:text))
@@ -123,6 +132,7 @@ class TagViewController: UIViewController,ZFTokenFieldDataSource,ZFTokenFieldDel
         
     }
     
+    
     func tokenField(tokenField: ZFTokenField!, didRemoveTokenAtIndex index: Int) {
         
         self.deleteOneRowByIndex(index)
@@ -132,7 +142,7 @@ class TagViewController: UIViewController,ZFTokenFieldDataSource,ZFTokenFieldDel
     }
     
     func tokenFieldShouldEndEditing(textField: ZFTokenField!) -> Bool {
-        
+
         return false
         
     }
@@ -140,6 +150,11 @@ class TagViewController: UIViewController,ZFTokenFieldDataSource,ZFTokenFieldDel
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func disablesAutomaticKeyboardDismissal() -> Bool {
+        
+        return false
     }
     
     
